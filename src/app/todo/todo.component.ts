@@ -1,4 +1,4 @@
-import { ToDo } from "@dhx/trial-todolist";
+import { ToDo, Toolbar } from "@dhx/trial-todolist";
 import { getData } from "./data";
 
 import {
@@ -14,25 +14,37 @@ import {
   encapsulation: ViewEncapsulation.None,
   selector: "todo",
   styleUrls: ["./todo.component.css"],
-  template: `<div #here class="widget"></div>`,
+  template: `
+    <div>
+      <div #toolbar_container></div>
+      <div #todo_container class="widget"></div>
+    </div>`
 })
 export class ToDoComponent implements OnInit, OnDestroy {
-  @ViewChild("here", { static: true }) container!: ElementRef;
+  @ViewChild("todo_container", { static: true }) todo_container!: ElementRef;
+  @ViewChild("toolbar_container", { static: true }) toolbar_container!: ElementRef;
 
-  private _todo!: ToDo;
+  private _todo!: any;
+  private _toolbar!: any;
 
   ngOnInit() {
     const { users, tasks, projects } = getData();
-    const todo = new ToDo(this.container.nativeElement, {
+    this._todo = new ToDo(this.todo_container.nativeElement, {
       users,
       tasks,
       projects,
+      // other configuration properties
     });
-
-    this._todo = todo;
+    
+    this._toolbar = new Toolbar(this.toolbar_container.nativeElement, {
+      api: this._todo.api,
+      // other configuration properties 
+    });
+    
   }
 
   ngOnDestroy(): void {
     this._todo.destructor();
+    this._toolbar.destructor();
   }
 }
