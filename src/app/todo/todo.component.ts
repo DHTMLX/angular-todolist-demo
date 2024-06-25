@@ -7,25 +7,24 @@ import {
   OnInit,
   OnDestroy,
   ViewChild,
-  ViewEncapsulation,
+  ViewEncapsulation
 } from "@angular/core";
 
 @Component({
   encapsulation: ViewEncapsulation.None,
   selector: "todo",
   styleUrls: ["./todo.component.css"],
-  template: `
-    <div>
-      <div #toolbar_container></div>
-      <div #todo_container class="widget"></div>
-    </div>`
+  template:  `<main class="component_container">
+                <div #toolbar_container></div>
+                <div #todo_container style="height: calc(100% - 56px);"></div>
+              </main>`
 })
 export class ToDoComponent implements OnInit, OnDestroy {
   @ViewChild("todo_container", { static: true }) todo_container!: ElementRef;
   @ViewChild("toolbar_container", { static: true }) toolbar_container!: ElementRef;
 
-  private _todo!: any;
-  private _toolbar!: any;
+  private _todo!: ToDo;
+  private _toolbar!: Toolbar;
 
   ngOnInit() {
     const { users, tasks, projects } = getData();
@@ -40,7 +39,6 @@ export class ToDoComponent implements OnInit, OnDestroy {
       api: this._todo.api,
       // other configuration properties 
     });
-    
   }
 
   ngOnDestroy(): void {
