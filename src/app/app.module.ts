@@ -7,7 +7,6 @@ import { ToDoComponent } from "./todo/todo.component";
 @NgModule({
   declarations: [AppComponent, ToDoComponent],
   imports: [BrowserModule],
-  providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
