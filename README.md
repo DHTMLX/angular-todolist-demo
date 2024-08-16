@@ -2,7 +2,7 @@
 
 [![dhtmlx.com](https://img.shields.io/badge/made%20by-DHTMLX-blue)](https://dhtmlx.com/)
 
-![DHTMLX To Do List with Angular Demo](https://raw.githubusercontent.com/DHTMLX/angular-todolist-demo/master/to-do-list.png)
+![DHTMLX To Do List with Angular Demo](to-do-list.png)
 
 ## How to start
 
