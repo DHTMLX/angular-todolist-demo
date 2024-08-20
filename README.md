@@ -2,10 +2,13 @@
 
 [![dhtmlx.com](https://img.shields.io/badge/made%20by-DHTMLX-blue)](https://dhtmlx.com/)
 
+[How to start](#how-to-start) | [Key features](#key-features) | [License](#license) | [Useful links](#links) | [Other examples](#examples) | [Join our online community](#join)
+
 ![DHTMLX To Do List with Angular Demo](to-do-list.png)
 
 The DHTMLX [JavaScript To Do List](https://dhtmlx.com/docs/products/dhtmlxTodo/) widget allows building a web app for effective task management. It has a clean, minimalist design that makes it easy for end-users to organize their business processes without unnecessary complexity.
 
+<a name="how-to-start"></a>
 ## How to start
 
 ### Online
@@ -28,6 +31,7 @@ npm install
 npm run start
 ```
 
+<a name="key-features"></a>
 ## DHTMLX To Do List key features
 
 - Rich JavaScript API
@@ -48,8 +52,13 @@ npm run start
 - Different modes of marking tasks completed
 - Calculating the number of completed subtasks
 - Estimating the percentage of the task completed
-- Full customization via CSS 
+- Full customization via CSS
 
+<a name="license"></a>
+## License ##
+This demo is available under the Evaluation license. To use it in your projects, please choose a proper license on the DHTMLX website: [https://dhtmlx.com/docs/products/licenses.shtml](https://dhtmlx.com/docs/products/licenses.shtml)
+
+<a name="links"></a>
 ## Useful links
 
 - [Online demo](https://replit.com/@dhtmlx/dhtmlx-to-do-list-with-angular)
@@ -57,6 +66,7 @@ npm run start
 - [Technical support](https://forum.dhtmlx.com/c/todo)
 - [Online  documentation](https://docs.dhtmlx.com/todolist/)
 
+<a name="examples"></a>
 ## Other examples
 
 Check out examples of using DHTMLX To Do List with other technologies:
@@ -65,6 +75,7 @@ Check out examples of using DHTMLX To Do List with other technologies:
 | ----- | ----- | ----- | ----- |
 | [![javascript](https://dhtmlx.com/images/common/technologies/js.svg)](https://github.com/DHTMLX/docs-todolist) | [![react](https://dhtmlx.com/images/common/technologies/react.svg)](https://github.com/DHTMLX/react-todolist-demo) | [![svelte](https://dhtmlx.com/images/common/technologies/svelte.svg)](https://github.com/DHTMLX/svelte-todolist-demo) | [![vue](https://dhtmlx.com/images/common/technologies/vue.svg)](https://github.com/DHTMLX/vue-todolist-demo) |
 
+<a name="join"></a>
 ## Join our online community
 
 - Star our GitHub repo :star:
