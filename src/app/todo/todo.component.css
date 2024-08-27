@@ -1,7 +1,23 @@
-@import "../../../node_modules/@dhx/trial-todolist/dist/todo.css";
+/* import To Do List styles */
+@import "@dhx/trial-todolist/dist/todo.css";
 
+/* specify styles for initial page */
+html,
+body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/* specify styles for To Do List and Toolbar container */
 .component_container {
   height: 100%; 
   max-width: 800px; 
   margin: 0 auto;
+}
+
+/* specify styles for To Do List container */
+.widget {
+  height: calc(100% - 56px);
 }
