@@ -16,7 +16,7 @@ import {
   styleUrls: ["./todo.component.css"],
   template:  `<main class="component_container">
                 <div #toolbar_container></div>
-                <div #todo_container style="height: calc(100% - 56px);"></div>
+                <div #todo_container class="widget"></div>
               </main>`
 })
 export class ToDoComponent implements OnInit, OnDestroy {
